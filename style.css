@@ -1,3 +1,5 @@
+/* HEADER AND THEME SELECTORS */
+
 .header {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     line-height: 50px;
@@ -40,4 +42,35 @@
 .selector-green {
     background-color: rgb(182, 246, 182);
     border-bottom: 0;
+}
+
+
+/*  NAV BAR */
+.brand-selectors {
+    display: flex;
+    margin: 50px auto;
+    background-color: rgb(224, 224, 224);
+    width: 80%;
+    padding: 0;
+}
+
+.brand-selector {
+    border: 1px solid rgb(156, 156, 156);
+    border-right: 0;
+    height: 100%;
+    padding: 5px 30px;
+    border-radius: 10px 0 0 0;
+    margin-right: -12px;
+}
+
+.brand-selector:hover {
+    cursor: pointer;
+    text-decoration: underline;
+} 
+
+.brand-selector-current {
+    border: 1px solid rgba(156, 156, 156);
+    background-color: rgba(124, 194, 255);
+    border-radius: 10px 10px 0 0;
+    z-index: 10;
 }

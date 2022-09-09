@@ -18,6 +18,12 @@
             <div class="colour-selector selector-green">G</div>
         </div>
     </header>
+
+    <nav class="brand-selectors">
+        <div class="brand-selector brand-selector-audi">Audi</div>
+        <div class=" brand-selector brand-selector-bmw">BMW</div>
+        <div class="brand-selector brand-selector-mercedes">Mercedes</div>
+    </nav>
     <script src="script.js"></script>
 </body>
 
