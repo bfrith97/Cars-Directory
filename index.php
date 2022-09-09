@@ -20,10 +20,13 @@
     </header>
 
     <nav class="brand-selectors">
-        <div class="brand-selector brand-selector-audi">Audi</div>
+        <div class="brand-selector brand-selector-audi brand-selector-current">Audi</div>
         <div class=" brand-selector brand-selector-bmw">BMW</div>
         <div class="brand-selector brand-selector-mercedes">Mercedes</div>
     </nav>
+    <div class="cars-window-audi">AUDI CARS</div>
+    <div class="cars-window-bmw">BMW CARS</div>
+    <div class="cars-window-mercedes">BMW CARS</div>
     <script src="script.js"></script>
 </body>
 

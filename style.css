@@ -48,7 +48,7 @@
 /*  NAV BAR */
 .brand-selectors {
     display: flex;
-    margin: 50px auto;
+    margin: 50px auto 0;
     background-color: rgb(224, 224, 224);
     width: 80%;
     padding: 0;
@@ -56,6 +56,7 @@
 
 .brand-selector {
     border: 1px solid rgb(156, 156, 156);
+    border-bottom: 0;
     border-right: 0;
     height: 100%;
     padding: 5px 30px;
@@ -73,4 +74,33 @@
     background-color: rgba(124, 194, 255);
     border-radius: 10px 10px 0 0;
     z-index: 10;
+}
+
+/* CAR WINDOW */
+
+.cars-window-audi {
+    margin: 0 auto;
+    background-color: rgb(224, 224, 224);
+    width: 80%;
+    height: 700px;
+    padding: 0;
+    border-top: 1px solid rgba(156, 156, 156);
+}
+
+.cars-window-bmw {
+    margin: 0 auto;
+    background-color: rgb(224, 224, 224);
+    width: 80%;
+    height: 700px;
+    padding: 0;
+    border-top: 1px solid rgba(156, 156, 156);
+}
+
+.cars-window-mercedes {
+    margin: 0 auto;
+    background-color: rgb(224, 224, 224);
+    width: 80%;
+    height: 700px;
+    padding: 0;
+    border-top: 1px solid rgba(156, 156, 156);
 }

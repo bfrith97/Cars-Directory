@@ -19,24 +19,24 @@ greenSelector.addEventListener('click', () => {
 })
 
 // Brand Selectors
-const audiSelector = document.querySelector('.brand-selector-audi');
-const bmwSelector = document.querySelector('.brand-selector-bmw');
-const mercSelector = document.querySelector('.brand-selector-mercedes');
+const audiNavSelector = document.querySelector('.brand-selector-audi');
+const bmwNavSelector = document.querySelector('.brand-selector-bmw');
+const mercNavSelector = document.querySelector('.brand-selector-mercedes');
 
-audiSelector.addEventListener('click', () => {
-    audiSelector.classList.add("brand-selector-current")
-    bmwSelector.classList.remove("brand-selector-current")
-    mercSelector.classList.remove("brand-selector-current")
+audiNavSelector.addEventListener('click', () => {
+    audiNavSelector.classList.add("brand-selector-current")
+    bmwNavSelector.classList.remove("brand-selector-current")
+    mercNavSelector.classList.remove("brand-selector-current")
 })
 
-bmwSelector.addEventListener('click', () => {
-    bmwSelector.classList.add("brand-selector-current")
-    audiSelector.classList.remove("brand-selector-current")
-    mercSelector.classList.remove("brand-selector-current")
+bmwNavSelector.addEventListener('click', () => {
+    bmwNavSelector.classList.add("brand-selector-current")
+    audiNavSelector.classList.remove("brand-selector-current")
+    mercNavSelector.classList.remove("brand-selector-current")
 })
 
-mercSelector.addEventListener('click', () => {
-    mercSelector.classList.add("brand-selector-current")
-    bmwSelector.classList.remove("brand-selector-current")
-    audiSelector.classList.remove("brand-selector-current")
+mercNavSelector.addEventListener('click', () => {
+    mercNavSelector.classList.add("brand-selector-current")
+    bmwNavSelector.classList.remove("brand-selector-current")
+    audiNavSelector.classList.remove("brand-selector-current")
 })
