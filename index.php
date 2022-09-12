@@ -27,12 +27,96 @@
         <div class="brand-selector brand-selector-ford">Ford</div>
         <div class="brand-selector brand-selector-mazda">Mazda</div>
     </nav>
-    <div class="cars-window cars-window-audi">AUDI CARS</div>
-    <div class="cars-window cars-window-bmw">BMW CARS</div>
-    <div class="cars-window cars-window-mercedes">MERC CARS</div>
-    <div class="cars-window cars-window-jaguar">JAG CARS</div>
-    <div class="cars-window cars-window-ford">FORD CARS</div>
-    <div class="cars-window cars-window-mazda">MAZDA CARS</div>
+    <div class="cars-window cars-window-audi">
+        <h1 class="car-title">AUDI</h1>
+        <div class="cars-window-inner">
+            <div class="cars-content cars-content-list">
+                <ul>
+                    <li class="content-name"><b>Model </b> - A1 EXAMPLE</li>
+                    <li class="content-name"><b>Year Introduced</b> - 2010</li>
+                    <li class="content-name"><b> Type </b> - Supermini</li>
+                </ul>
+            </div>
+            <div class="cars-content cars-content-add">
+                <form class="form-add" method="POST" action="/index.php">
+                    <label for="name"> Model Name:</label><input type="text" name="name" required>
+                    <label for="year"> Year Introduced:</label><input type="number" name="year" required>
+                    <label for="type"> Type: </label><input type="text" name="type" required>
+                    <input class="submit" type="submit">
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="cars-window cars-window-bmw">
+        <h1 class="car-title">BMW</h1>
+        <div class="cars-window-inner">
+            <div class="cars-content cars-content-list">LIST</div>
+            <div class="cars-content cars-content-add">
+                <form class="form-add" method="POST" action="/index.php">
+                    <label for="name"> Model Name:</label><input type="text" name="name" required>
+                    <label for="year"> Year Introduced:</label><input type="text" name="year" required>
+                    <label for="type"> Type:</label><input type="text" name="type" required>
+                    <input class="submit" type="submit">
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="cars-window cars-window-mercedes">
+        <h1 class="car-title">MERCEDES</h1>
+        <div class="cars-window-inner">
+            <div class="cars-content cars-content-list">LIST</div>
+            <div class="cars-content cars-content-add">
+                <form class="form-add" method="POST" action="/index.php">
+                    <label for="name"> Model Name:</label><input type="text" name="name" required>
+                    <label for="year"> Year Introduced:</label><input type="text" name="year" required>
+                    <label for="type"> Type:</label><input type="text" name="type" required>
+                    <input class="submit" type="submit">
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="cars-window cars-window-jaguar">
+        <h1 class="car-title">JAGUAR</h1>
+        <div class="cars-window-inner">
+            <div class="cars-content cars-content-list">LIST</div>
+            <div class="cars-content cars-content-add">
+                <form class="form-add" method="POST" action="/index.php">
+                    <label for="name"> Model Name:</label><input type="text" name="name" required>
+                    <label for="year"> Year Introduced:</label><input type="text" name="year" required>
+                    <label for="type"> Type:</label><input type="text" name="type" required>
+                    <input class="submit" type="submit">
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="cars-window cars-window-ford">
+        <h1 class="car-title">FORD</h1>
+        <div class="cars-window-inner">
+            <div class="cars-content cars-content-list">LIST</div>
+            <div class="cars-content cars-content-add">
+                <form class="form-add" method="POST" action="/index.php">
+                    <label for="name"> Model Name:</label><input type="text" name="name" required>
+                    <label for="year"> Year Introduced:</label><input type="text" name="year" required>
+                    <label for="type"> Type:</label><input type="text" name="type" required>
+                    <input class="submit" type="submit">
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="cars-window cars-window-mazda">
+        <h1 class="car-title">MAZDA</h1>
+        <div class="cars-window-inner">
+            <div class="cars-content cars-content-list">LIST</div>
+            <div class="cars-content cars-content-add">
+                <form class="form-add" method="POST" action="/index.php">
+                    <label for="name"> Model Name:</label><input type="text" name="name" required>
+                    <label for="year"> Year Introduced:</label><input type="text" name="year" required>
+                    <label for="type"> Type:</label><input type="text" name="type" required>
+                    <input class="submit" type="submit">
+                </form>
+            </div>
+        </div>
+    </div>
     <script src="script.js"></script>
 </body>
 
