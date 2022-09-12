@@ -52,6 +52,8 @@
     background-color: rgb(224, 224, 224);
     width: 80%;
     padding: 0;
+    border-radius: 10px 10px 0 0;
+    overflow: hidden;
 }
 
 .brand-selector {
@@ -59,7 +61,7 @@
     border-bottom: 0;
     border-right: 0;
     height: 100%;
-    padding: 5px 30px;
+    padding: 5px 67px;
     border-radius: 10px 0 0 0;
     margin-right: -12px;
 }
@@ -74,33 +76,42 @@
     background-color: rgba(124, 194, 255);
     border-radius: 10px 10px 0 0;
     z-index: 10;
+    font-weight: bolder;
+    padding: 5px 70px;
 }
 
 /* CAR WINDOW */
 
-.cars-window-audi {
+.cars-window {
     margin: 0 auto;
     background-color: rgb(224, 224, 224);
     width: 80%;
     height: 700px;
     padding: 0;
     border-top: 1px solid rgba(156, 156, 156);
+}
+
+.cars-window-audi {
+   display: block
 }
 
 .cars-window-bmw {
-    margin: 0 auto;
-    background-color: rgb(224, 224, 224);
-    width: 80%;
-    height: 700px;
-    padding: 0;
-    border-top: 1px solid rgba(156, 156, 156);
+    display: none;
+
 }
 
 .cars-window-mercedes {
-    margin: 0 auto;
-    background-color: rgb(224, 224, 224);
-    width: 80%;
-    height: 700px;
-    padding: 0;
-    border-top: 1px solid rgba(156, 156, 156);
+    display: none;
+}
+
+.cars-window-jaguar {
+    display: none;
+}
+
+.cars-window-ford {
+    display: none;
+}
+
+.cars-window-mazda {
+    display: none;
 }

@@ -23,10 +23,16 @@
         <div class="brand-selector brand-selector-audi brand-selector-current">Audi</div>
         <div class=" brand-selector brand-selector-bmw">BMW</div>
         <div class="brand-selector brand-selector-mercedes">Mercedes</div>
+        <div class="brand-selector brand-selector-jaguar">Jaguar</div>
+        <div class="brand-selector brand-selector-ford">Ford</div>
+        <div class="brand-selector brand-selector-mazda">Mazda</div>
     </nav>
-    <div class="cars-window-audi">AUDI CARS</div>
-    <div class="cars-window-bmw">BMW CARS</div>
-    <div class="cars-window-mercedes">BMW CARS</div>
+    <div class="cars-window cars-window-audi">AUDI CARS</div>
+    <div class="cars-window cars-window-bmw">BMW CARS</div>
+    <div class="cars-window cars-window-mercedes">MERC CARS</div>
+    <div class="cars-window cars-window-jaguar">JAG CARS</div>
+    <div class="cars-window cars-window-ford">FORD CARS</div>
+    <div class="cars-window cars-window-mazda">MAZDA CARS</div>
     <script src="script.js"></script>
 </body>
 
