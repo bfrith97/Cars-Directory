@@ -31,10 +31,13 @@
         <h1 class="car-title">AUDI</h1>
         <div class="cars-window-inner">
             <div class="cars-content cars-content-list">
+                <form method="POST" action="/deleteall">
+                    <button name="delete" type="submit" onclick="return confirm('Are you sure you want to delete all?')">Delete All</button>
+                </form>
                 <?php foreach ($cars as $car) : ?>
                     <ul>
                         <li class="content-name"><b>Model </b> - <?= $car->model ?></li>
-                        <li class="content-name"><b>Year Introduced</b> <?= $car->year ?></li>
+                        <li class="content-name"><b>Year Introduced</b> - <?= $car->year ?></li>
                         <li class="content-name"><b> Type </b> - <?= $car->type ?></li>
                     </ul>
                 <?php endforeach ?>

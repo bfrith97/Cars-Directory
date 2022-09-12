@@ -22,4 +22,11 @@ class CarsController
 
         return redirect('home');
     }
+
+    public function deleteAll()
+    {
+        App::get('database')->deleteAll('cars');
+
+        return redirect('home');
+    }
 }
