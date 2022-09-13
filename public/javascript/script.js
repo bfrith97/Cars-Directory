@@ -79,9 +79,11 @@ reverseSortBtns.forEach((btn) => {
             if (list.style.flexDirection === 'column') {
                 list.style.flexDirection = "column-reverse";
                 console.log('1')
+                btn.textContent = "/\\ Sort /\\"
             } else {
                 list.style.flexDirection = 'column';
                 console.log('2')
+                btn.textContent = "\\/ Sort \\/"
             }
         })
 

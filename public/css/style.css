@@ -36,7 +36,6 @@ body {
 }
 
 .selector-red {
-
     background-color: rgb(255, 124, 124);
 }
 
@@ -55,7 +54,6 @@ body {
     display: flex;
     margin: 50px auto 0;
     background-color: rgba(124, 194, 255, 0.5);
-    width: 80%;
     max-width: 1003px;
     padding: 0;
     border-radius: 10px 10px 0 0;
@@ -92,16 +90,21 @@ body {
 
 /* CAR WINDOW */
 
+.container {
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    max-width: 1003px;
+    min-width: 1000px;
+    border-radius: 10px 10px 10px 10px;
+    margin: auto;
+}
+
 .cars-window {
     margin: 0 auto;
     background-color: rgb(224, 224, 224);
-    width: 79.8%;
     height: 700px;
     padding: 0;
-    max-width: 1003px;
     border: 1px solid rgba(156, 156, 156);
     border-radius: 0 0 10px 10px;
-
 }
 
 .cars-window-audi {
@@ -162,7 +165,7 @@ body {
 
 .car-list {
     padding-bottom: 10px;
-    border-bottom: 1px solid rgba(156, 156, 156);
+    border-bottom: 1px solid rgba(156, 156, 156, 0.501);
     width: 80%;
     margin: 10px 0 0 0;
     
@@ -214,6 +217,14 @@ button:hover {
     border-radius: 0 0 6px 6px;
 }
 
+.delete-btn {
+    border-radius: 0 0 0 0;
+    border-right: 0;
+}
+
+.sort-btn {
+    border-radius: 0 0 0 6px;
+}
 
 
 ul {
