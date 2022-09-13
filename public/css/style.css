@@ -1,5 +1,9 @@
 /* HEADER AND THEME SELECTORS */
 
+body {
+    font-family:Verdana, Geneva, Tahoma, sans-serif
+}
+
 .header {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     line-height: 50px;
@@ -51,6 +55,7 @@
     margin: 50px auto 0;
     background-color: rgba(124, 194, 255, 0.5);
     width: 80%;
+    max-width: 1003px;
     padding: 0;
     border-radius: 10px 10px 0 0;
     overflow: hidden;
@@ -59,11 +64,11 @@
 .brand-selector {
     border: 1px solid rgb(156, 156, 156);
     border-bottom: 0;
-    border-right: 0;
+    border-left: 0;
     height: 100%;
-    padding: 5px 67px;
-    border-radius: 10px 0 0 0;
-    margin-right: -12px;
+    padding: 5px 64px;
+    border-radius: 0 10px 0 0;
+    margin-left: -15px;
 }
 
 .brand-selector:hover {
@@ -78,7 +83,7 @@
     background-color: rgb(182, 182, 182);
     z-index: 10;
     font-weight: bolder;
-    padding: 5px 70px;
+    padding: 5px 75px;
 }
 
 /* CAR WINDOW */
@@ -89,7 +94,7 @@
     width: 79.8%;
     height: 700px;
     padding: 0;
-    
+    max-width: 1000px;
     border: 1px solid rgba(156, 156, 156);
 }
 
@@ -139,11 +144,35 @@
     
 }
 
+.cars-content-list {
+    overflow-y: scroll;
+}
+
+.car-lists {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.car-list {
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgba(156, 156, 156);
+    width: 80%;
+    margin: 10px 0 0 0;
+    
+}
+
+.cars-content-add {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
 .form-add {
     display: grid;
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: 2fr 3fr;
     grid-template-rows: 1fr 1fr;
-    margin: 50% 20px;
+    margin: 0 25px;
 }
 
 input {
@@ -151,12 +180,33 @@ input {
     font-size: 20px;
 }
 
+button:hover {
+    cursor: pointer
+}
+
 .submit {
     grid-column: 1 / -1;
     width: 150px;
+    padding: 5px 0;
     margin: 0 0 0 auto;
     border: 1px solid rgba(156, 156, 156);
     border-radius: 3px;
+}
+
+.delete-form {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.delete-btn {
+    width: 100px;
+    padding: 5px 0;
+    border-bottom: 1px solid rgba(156, 156, 156);
+    border-left: 1px solid rgba(156, 156, 156);
+    border-top: 0;
+    border-right: 0;
+    
+    border-radius: 0 0 0 6px;
 }
 
 ul {

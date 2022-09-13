@@ -8,13 +8,26 @@ class CarsController
 {
     public function index()
     {
-        $cars = App::get('database')->selectAll('cars');
-        return view('home', ['cars' => $cars]);
+        $bmws = App::get('database')->selectAll('bmw');
+        $audis = App::get('database')->selectAll('audi');
+        $mercs = App::get('database')->selectAll('mercedes');
+        $jags = App::get('database')->selectAll('jaguar');
+        $fords = App::get('database')->selectAll('ford');
+        $mazdas = App::get('database')->selectAll('mazda');
+        return view('home', [
+            'audis' => $audis,
+            'bmws' => $bmws,
+            'mercs' => $mercs,
+            'jags' => $jags,
+            'fords' => $fords,
+            'mazdas' => $mazdas
+        ]);
     }
 
-    public function store()
+    //audi
+    public function storeAudi()
     {
-        App::get('database')->insert('cars', [
+        App::get('database')->insert('audi', [
             'model' => $_POST['model'],
             'year' => $_POST['year'],
             'type' => $_POST['type']
@@ -23,9 +36,104 @@ class CarsController
         return redirect('home');
     }
 
-    public function deleteAll()
+    public function deleteAllAudi()
     {
-        App::get('database')->deleteAll('cars');
+        App::get('database')->deleteAll('audi');
+
+        return redirect('home');
+    }
+
+    //bmw
+    public function storeBMW()
+    {
+        App::get('database')->insert('bmw', [
+            'model' => $_POST['model'],
+            'year' => $_POST['year'],
+            'type' => $_POST['type']
+        ]);
+
+        return redirect('home');
+    }
+
+    public function deleteAllBMW()
+    {
+        App::get('database')->deleteAll('bmw');
+
+        return redirect('home');
+    }
+
+    //merc
+    public function storeMerc()
+    {
+        App::get('database')->insert('mercedes', [
+            'model' => $_POST['model'],
+            'year' => $_POST['year'],
+            'type' => $_POST['type']
+        ]);
+
+        return redirect('home');
+    }
+
+    public function deleteAllMerc()
+    {
+        App::get('database')->deleteAll('merc');
+
+        return redirect('home');
+    }
+
+    //jag
+    public function storeJag()
+    {
+        App::get('database')->insert('jaguar', [
+            'model' => $_POST['model'],
+            'year' => $_POST['year'],
+            'type' => $_POST['type']
+        ]);
+
+        return redirect('home');
+    }
+
+    public function deleteAllJag()
+    {
+        App::get('database')->deleteAll('jaguar');
+
+        return redirect('home');
+    }
+
+    //ford
+    public function storeFord()
+    {
+        App::get('database')->insert('ford', [
+            'model' => $_POST['model'],
+            'year' => $_POST['year'],
+            'type' => $_POST['type']
+        ]);
+
+        return redirect('home');
+    }
+
+    public function deleteAllFord()
+    {
+        App::get('database')->deleteAll('ford');
+
+        return redirect('home');
+    }
+
+    //mazda
+    public function storeMazda()
+    {
+        App::get('database')->insert('mazda', [
+            'model' => $_POST['model'],
+            'year' => $_POST['year'],
+            'type' => $_POST['type']
+        ]);
+
+        return redirect('home');
+    }
+
+    public function deleteAllMazda()
+    {
+        App::get('database')->deleteAll('mazda');
 
         return redirect('home');
     }
