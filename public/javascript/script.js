@@ -43,6 +43,7 @@ const fordWindowSelector = document.querySelector('.cars-window-ford');
 const mazdaWindowSelector = document.querySelector('.cars-window-mazda');
 
 
+import { audiActive, bmwActive, fordActive, jagActive, mazdaActive, mercActive } from "./functions/navSelectors.js";
 
 audiNavSelector.addEventListener('click', () => {
     audiActive();
@@ -68,6 +69,14 @@ mazdaNavSelector.addEventListener('click', () => {
     mazdaActive();
 })
 
-import { audiActive, bmwActive, fordActive, jagActive, mazdaActive, mercActive } from "./functions/navSelectors.js";
-
-
+const reverseSortBtn = document.querySelector('.sort-btn')
+const carLists = document.querySelector('.car-lists')
+reverseSortBtn.addEventListener('click', () => {
+    if (carLists.style.flexDirection === 'column') {
+        carLists.style.flexDirection = "column-reverse";
+        console.log('1')
+    } else {
+        carLists.style.flexDirection = 'column';
+        console.log('2')
+    }
+})

@@ -96,6 +96,8 @@ body {
     padding: 0;
     max-width: 1000px;
     border: 1px solid rgba(156, 156, 156);
+    border-radius: 0 0 10px 10px;
+
 }
 
 .cars-window-audi {
@@ -198,16 +200,17 @@ button:hover {
     flex-direction: row-reverse;
 }
 
-.delete-btn {
+.list-btn {
     width: 100px;
     padding: 5px 0;
     border-bottom: 1px solid rgba(156, 156, 156);
     border-left: 1px solid rgba(156, 156, 156);
+    border-right: 1px solid rgba(156, 156, 156);
     border-top: 0;
-    border-right: 0;
-    
-    border-radius: 0 0 0 6px;
+    border-radius: 0 0 6px 6px;
 }
+
+
 
 ul {
     list-style: none

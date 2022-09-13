@@ -32,17 +32,18 @@
         <div class="cars-window-inner">
             <div class="cars-content cars-content-list">
                 <form class="delete-form" method="POST" action="/deleteAllAudi">
-                    <button class="delete-btn" name="delete" type="submit" onclick="return confirm('Are you sure you want to delete all?')">Delete All</button>
+                    <button class="list-btn" name="delete" type="submit" onclick="return confirm('Are you sure you want to delete all?')">Delete All</button>
+                    <button class="list-btn sort-btn" type="button">Reverse Sort</button>
                 </form>
-                <?php foreach ($audis as $audi) : ?>
-                    <div class="car-lists">
+                <div class="car-lists">
+                    <?php foreach ($audis as $audi) : ?>
                         <ul class="car-list">
                             <li class="content-name"><b>Model </b> - <?= $audi->model ?></li>
                             <li class="content-name"><b>Year Introduced</b> - <?= $audi->year ?></li>
                             <li class="content-name"><b> Type </b> - <?= $audi->type ?></li>
                         </ul>
-                    </div>
-                <?php endforeach ?>
+                    <?php endforeach ?>
+                </div>
             </div>
             <div class="cars-content cars-content-add">
                 <form class="form-add" method="POST" action="/storeAudi">
@@ -59,7 +60,7 @@
         <div class="cars-window-inner">
             <div class="cars-content cars-content-list">
                 <form class="delete-form" method="POST" action="/deleteAllBMW">
-                    <button class="delete-btn" name="delete" type="submit" onclick="return confirm('Are you sure you want to delete all?')">Delete All</button>
+                    <button class="list-btn" name="delete" type="submit" onclick="return confirm('Are you sure you want to delete all?')">Delete All</button>
                 </form>
                 <?php foreach ($bmws as $bmw) : ?>
                     <div class="car-lists">
@@ -86,7 +87,7 @@
         <div class="cars-window-inner">
             <div class="cars-content cars-content-list">
                 <form class="delete-form" method="POST" action="/deleteAllMerc">
-                    <button class="delete-btn" name="delete" type="submit" onclick="return confirm('Are you sure you want to delete all?')">Delete All</button>
+                    <button class="list-btn" name="delete" type="submit" onclick="return confirm('Are you sure you want to delete all?')">Delete All</button>
                 </form>
                 <?php foreach ($mercs as $merc) : ?>
                     <div class="car-lists">
@@ -113,7 +114,7 @@
         <div class="cars-window-inner">
             <div class="cars-content cars-content-list">
                 <form class="delete-form" method="POST" action="/deleteAllJag">
-                    <button class="delete-btn" name="delete" type="submit" onclick="return confirm('Are you sure you want to delete all?')">Delete All</button>
+                    <button class="list-btn" name="delete" type="submit" onclick="return confirm('Are you sure you want to delete all?')">Delete All</button>
                 </form>
                 <?php foreach ($jags as $jag) : ?>
                     <div class="car-lists">
@@ -140,7 +141,7 @@
         <div class="cars-window-inner">
             <div class="cars-content cars-content-list">
                 <form class="delete-form" method="POST" action="/deleteAllFord">
-                    <button class="delete-btn" name="delete" type="submit" onclick="return confirm('Are you sure you want to delete all?')">Delete All</button>
+                    <button class="list-btn" name="delete" type="submit" onclick="return confirm('Are you sure you want to delete all?')">Delete All</button>
                 </form>
                 <?php foreach ($fords as $ford) : ?>
                     <div class="car-lists">
@@ -167,7 +168,7 @@
         <div class="cars-window-inner">
             <div class="cars-content cars-content-list">
                 <form class="delete-form" method="POST" action="/deleteAllMazda">
-                    <button class="delete-btn" name="delete" type="submit" onclick="return confirm('Are you sure you want to delete all?')">Delete All</button>
+                    <button class="list-btn" name="delete" type="submit" onclick="return confirm('Are you sure you want to delete all?')">Delete All</button>
                 </form>
                 <?php foreach ($mazdas as $mazda) : ?>
                     <div class="car-lists">
