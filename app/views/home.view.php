@@ -61,16 +61,17 @@
             <div class="cars-content cars-content-list">
                 <form class="delete-form" method="POST" action="/deleteAllBMW">
                     <button class="list-btn" name="delete" type="submit" onclick="return confirm('Are you sure you want to delete all?')">Delete All</button>
+                    <button class="list-btn sort-btn" type="button">Reverse Sort</button>
                 </form>
-                <?php foreach ($bmws as $bmw) : ?>
-                    <div class="car-lists">
+                <div class="car-lists">
+                    <?php foreach ($bmws as $bmw) : ?>
                         <ul class="car-list">
                             <li class="content-name"><b>Model </b> - <?= $bmw->model ?></li>
                             <li class="content-name"><b>Year Introduced</b> - <?= $bmw->year ?></li>
                             <li class="content-name"><b> Type </b> - <?= $bmw->type ?></li>
                         </ul>
-                    </div>
-                <?php endforeach ?>
+                    <?php endforeach ?>
+                </div>
             </div>
             <div class="cars-content cars-content-add">
                 <form class="form-add" method="POST" action="/storeBMW">
@@ -88,16 +89,17 @@
             <div class="cars-content cars-content-list">
                 <form class="delete-form" method="POST" action="/deleteAllMerc">
                     <button class="list-btn" name="delete" type="submit" onclick="return confirm('Are you sure you want to delete all?')">Delete All</button>
+                    <button class="list-btn sort-btn" type="button">Reverse Sort</button>
                 </form>
-                <?php foreach ($mercs as $merc) : ?>
-                    <div class="car-lists">
+                <div class="car-lists">
+                    <?php foreach ($mercs as $merc) : ?>
                         <ul class="car-list">
                             <li class="content-name"><b>Model </b> - <?= $merc->model ?></li>
                             <li class="content-name"><b>Year Introduced</b> - <?= $merc->year ?></li>
                             <li class="content-name"><b> Type </b> - <?= $merc->type ?></li>
                         </ul>
-                    </div>
-                <?php endforeach ?>
+                    <?php endforeach ?>
+                </div>
             </div>
             <div class="cars-content cars-content-add">
                 <form class="form-add" method="POST" action="/storeMerc">
@@ -115,16 +117,17 @@
             <div class="cars-content cars-content-list">
                 <form class="delete-form" method="POST" action="/deleteAllJag">
                     <button class="list-btn" name="delete" type="submit" onclick="return confirm('Are you sure you want to delete all?')">Delete All</button>
+                    <button class="list-btn sort-btn" type="button">Reverse Sort</button>
                 </form>
-                <?php foreach ($jags as $jag) : ?>
-                    <div class="car-lists">
+                <div class="car-lists">
+                    <?php foreach ($jags as $jag) : ?>
                         <ul class="car-list">
                             <li class="content-name"><b>Model </b> - <?= $jag->model ?></li>
                             <li class="content-name"><b>Year Introduced</b> - <?= $jag->year ?></li>
                             <li class="content-name"><b> Type </b> - <?= $jag->type ?></li>
                         </ul>
-                    </div>
-                <?php endforeach ?>
+                    <?php endforeach ?>
+                </div>
             </div>
             <div class="cars-content cars-content-add">
                 <form class="form-add" method="POST" action="/storeJag">
@@ -142,16 +145,17 @@
             <div class="cars-content cars-content-list">
                 <form class="delete-form" method="POST" action="/deleteAllFord">
                     <button class="list-btn" name="delete" type="submit" onclick="return confirm('Are you sure you want to delete all?')">Delete All</button>
+                    <button class="list-btn sort-btn" type="button">Reverse Sort</button>
                 </form>
-                <?php foreach ($fords as $ford) : ?>
-                    <div class="car-lists">
+                <div class="car-lists">
+                    <?php foreach ($fords as $ford) : ?>
                         <ul class="car-list">
                             <li class="content-name"><b>Model </b> - <?= $ford->model ?></li>
                             <li class="content-name"><b>Year Introduced</b> - <?= $ford->year ?></li>
                             <li class="content-name"><b> Type </b> - <?= $ford->type ?></li>
                         </ul>
-                    </div>
-                <?php endforeach ?>
+                    <?php endforeach ?>
+                </div>
             </div>
             <div class="cars-content cars-content-add">
                 <form class="form-add" method="POST" action="/storeFord">
@@ -169,16 +173,17 @@
             <div class="cars-content cars-content-list">
                 <form class="delete-form" method="POST" action="/deleteAllMazda">
                     <button class="list-btn" name="delete" type="submit" onclick="return confirm('Are you sure you want to delete all?')">Delete All</button>
+                    <button class="list-btn sort-btn" type="button">Reverse Sort</button>
                 </form>
-                <?php foreach ($mazdas as $mazda) : ?>
-                    <div class="car-lists">
+                <div class="car-lists">
+                    <?php foreach ($mazdas as $mazda) : ?>
                         <ul class="car-list">
                             <li class="content-name"><b>Model </b> - <?= $mazda->model ?></li>
                             <li class="content-name"><b>Year Introduced</b> - <?= $mazda->year ?></li>
                             <li class="content-name"><b> Type </b> - <?= $mazda->type ?></li>
                         </ul>
-                    </div>
-                <?php endforeach ?>
+                    <?php endforeach ?>
+                </div>
             </div>
             <div class="cars-content cars-content-add">
                 <form class="form-add" method="POST" action="/storeMazda">

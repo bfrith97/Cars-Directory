@@ -23,6 +23,7 @@ body {
     flex-direction: column;
     text-align: center;
     width: 60px;
+
 }
 
 .colour-selector {
@@ -59,6 +60,9 @@ body {
     padding: 0;
     border-radius: 10px 10px 0 0;
     overflow: hidden;
+    border-left: 1px solid rgb(156, 156, 156);
+    border-right: 1px solid rgb(156, 156, 156);
+    
 }
 
 .brand-selector {
@@ -94,7 +98,7 @@ body {
     width: 79.8%;
     height: 700px;
     padding: 0;
-    max-width: 1000px;
+    max-width: 1003px;
     border: 1px solid rgba(156, 156, 156);
     border-radius: 0 0 10px 10px;
 

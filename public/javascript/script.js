@@ -69,14 +69,33 @@ mazdaNavSelector.addEventListener('click', () => {
     mazdaActive();
 })
 
-const reverseSortBtn = document.querySelector('.sort-btn')
-const carLists = document.querySelector('.car-lists')
-reverseSortBtn.addEventListener('click', () => {
-    if (carLists.style.flexDirection === 'column') {
-        carLists.style.flexDirection = "column-reverse";
-        console.log('1')
-    } else {
-        carLists.style.flexDirection = 'column';
-        console.log('2')
-    }
+const reverseSortBtns = document.querySelectorAll('.sort-btn')
+
+const carLists = document.querySelectorAll('.car-lists')
+
+reverseSortBtns.forEach((btn) => {
+    btn.addEventListener('click', () => {
+        carLists.forEach((list) => {
+            if (list.style.flexDirection === 'column') {
+                list.style.flexDirection = "column-reverse";
+                console.log('1')
+            } else {
+                list.style.flexDirection = 'column';
+                console.log('2')
+            }
+        })
+
+       
+    })
 })
+
+
+// reverseSortBtn.addEventListener('click', () => {
+//     if (carLists.style.flexDirection === 'column') {
+//         carLists.style.flexDirection = "column-reverse";
+//         console.log('1')
+//     } else {
+//         carLists.style.flexDirection = 'column';
+//         console.log('2')
+//     }
+// })
