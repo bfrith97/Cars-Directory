@@ -1,7 +1,7 @@
 /* HEADER AND THEME SELECTORS */
 
 body {
-    font-family:Verdana, Geneva, Tahoma, sans-serif
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .header {
@@ -13,6 +13,16 @@ body {
     background-color: rgba(124, 194, 255);
     border-bottom: 1px solid black;
 }
+
+/* Landing Modal */
+.landing-modal {
+    border: 1px solid black;
+    width: 50%;
+    height: 500px;
+    position: absolute;
+    /* backdrop-filter: blur(10px) */
+}
+
 
 .title {
     margin-left: 25px;

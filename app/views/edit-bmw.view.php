@@ -29,9 +29,21 @@
             </form>
         </nav>
         <div class="cars-window">
-
+            <div class="car-lists-edit">
+                <?php foreach ($bmws as $bmw) : ?>
+                    <ul class="car-list-edit">
+                        <li class="content-name"><b>Model </b> - <?= $bmw->model ?></li>
+                        <li class="content-name"><b>Year Introduced</b> - <?= $bmw->year ?></li>
+                        <li class="content-name"><b> Type </b> - <?= $bmw->type ?></li>
+                    </ul>
+                    <ul class="edit-btns">
+                        <button class="edit-btn-link">EDIT</button>
+                        <button class="edit-btn-link">DELETE</button>
+                    </ul>
+                <?php endforeach ?>
+            </div>
         </div>
-        <!-- <script type="module" src="/public/javascript/script.js"></script> -->
+        <script type="module" src="/public/javascript/editPage.js"></script>
 </body>
 
 </html>

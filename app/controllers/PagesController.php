@@ -6,9 +6,9 @@ use App\Core\App;
 
 class PagesController
 {
-    public function home()
+    public function landing()
     {
-        return view('home');
+        return view('landing');
     }
 
     public function editAudi()

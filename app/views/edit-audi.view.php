@@ -28,7 +28,7 @@
                 <button type="submit" class='return-btn'>EXIT EDITOR</button>
             </form>
         </nav>
-        <div class="cars-window cars-window-audi">
+        <div class="cars-window">
             <div class="car-lists-edit">
                 <?php foreach ($audis as $audi) : ?>
                     <ul class="car-list-edit">

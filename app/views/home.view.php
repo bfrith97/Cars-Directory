@@ -20,8 +20,6 @@
     </header>
 
     <div class='container'>
-
-
         <nav class="brand-selectors">
             <div class="brand-selector brand-selector-audi brand-selector-current">Audi</div>
             <div class=" brand-selector brand-selector-bmw">BMW</div>
@@ -229,6 +227,7 @@
             </div>
         </div>
     </div>
+
     <script type="module" src="/public/javascript/script.js"></script>
 </body>
 

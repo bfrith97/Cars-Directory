@@ -1,9 +1,7 @@
 <?php
 
-
-$router->get('home', 'CarsController@index');
 $router->get('', 'CarsController@index');
-$router->get('about', 'PagesController@about');
+$router->get('home', 'CarsController@index');
 
 //audi
 $router->post('storeAudi', 'CarsController@storeAudi');

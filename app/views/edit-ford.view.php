@@ -29,7 +29,19 @@
             </form>
         </nav>
         <div class="cars-window">
-
+            <div class="car-lists-edit">
+                <?php foreach ($fords as $ford) : ?>
+                    <ul class="car-list-edit">
+                        <li class="content-name"><b>Model </b> - <?= $ford->model ?></li>
+                        <li class="content-name"><b>Year Introduced</b> - <?= $ford->year ?></li>
+                        <li class="content-name"><b> Type </b> - <?= $ford->type ?></li>
+                    </ul>
+                    <ul class="edit-btns">
+                        <button class="edit-btn-link">EDIT</button>
+                        <button class="edit-btn-link">DELETE</button>
+                    </ul>
+                <?php endforeach ?>
+            </div>
         </div>
         <script type="module" src="/public/javascript/editPage.js"></script>
 </body>
