@@ -207,13 +207,6 @@ button:hover {
     flex-direction: row-reverse;
 }
 
-.buttons {
-    display: flex;
-    /* justify-content: flex-end; */
-    justify-content: end;
-    flex-direction: row-reverse;
-}
-
 .list-btn {
     width: 100px;
     padding: 5px 0;
@@ -221,7 +214,7 @@ button:hover {
     border-left: 1px solid rgba(156, 156, 156);
     border-right: 1px solid rgba(156, 156, 156);
     border-top: 0;
-    margin-bottom: 15px;
+    border-radius: 0 0 6px 6px;
 }
 
 .delete-btn {
@@ -234,57 +227,6 @@ button:hover {
 }
 
 
-
-
 ul {
     list-style: none
-}
-
-/* Edit page */
-.return-btn {
-    border: 0;
-    width: 100%;
-    height: 100%;
-}
-
-.edit-btns {
-    border-left: 1px solid rgba(156, 156, 156, 0.501);
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-}
-
-.exit-form {
-    margin-left: auto;
-    border-radius: 0 6px 0 0;
-    border: 0;
-    border-left: 1px solid rgba(156, 156, 156);
-    width: 200px;
-}
-
-.container-edit {
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
-    max-width: 600px;
-    min-width: 600px;
-    border-radius: 10px 10px 10px 10px;
-    margin: auto;
-}
-
-.car-lists-edit {
-    display: grid;
-    grid-template-columns: 5fr 1fr;
-    /* background-color: red; */
-    /* grid-gap: 20px; */
-}
-
-.car-list-edit {
-    
-    padding: 0px;
-    margin: 15px 0 0 50px;
-    border-bottom: 1px solid rgba(156, 156, 156, 0.501);
-}
-
-.edit-btn-link {
-    height: 23px;
-    margin: 0 50px 5px
 }
