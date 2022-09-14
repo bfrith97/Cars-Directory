@@ -53,9 +53,9 @@
                 </div>
                 <div class="cars-content cars-content-add">
                     <form class="form-add" method="POST" action="/storeAudi">
-                        <label for="model"> Model Name:</label><input type="text" name="model" required maxlength="10">
-                        <label for="year"> Year Introduced:</label><input type="number" name="year" required maxlength="4">
-                        <label for="type"> Type: </label><input type="text" name="type" required maxlength="10">
+                        <label for="model"> Model Name:</label><input type="text" name="model" required maxlength="20">
+                        <label for="year"> Year Introduced:</label><input type="number" name="year" required>
+                        <label for="type"> Type: </label><input type="text" name="type" required maxlength="20">
                         <button class="submit" type="submit">Submit</button>
                     </form>
                 </div>
@@ -86,9 +86,9 @@
                 </div>
                 <div class="cars-content cars-content-add">
                     <form class="form-add" method="POST" action="/storeBMW">
-                        <label for="name"> Model Name:</label><input type="text" name="model" required maxlength="10">
+                        <label for="name"> Model Name:</label><input type="text" name="model" required maxlength="20">
                         <label for="year"> Year Introduced:</label><input type="text" name="year" required>
-                        <label for="type"> Type:</label><input type="text" name="type" required maxlength="10">
+                        <label for="type"> Type:</label><input type="text" name="type" required maxlength="20">
                         <button class="submit" type="submit">Submit</button>
                     </form>
                 </div>
@@ -119,9 +119,9 @@
                 </div>
                 <div class="cars-content cars-content-add">
                     <form class="form-add" method="POST" action="/storeMerc">
-                        <label for="name"> Model Name:</label><input type="text" name="model" required maxlength="10">
+                        <label for="name"> Model Name:</label><input type="text" name="model" required maxlength="20">
                         <label for="year"> Year Introduced:</label><input type="text" name="year" required>
-                        <label for="type"> Type:</label><input type="text" name="type" required maxlength="10">
+                        <label for="type"> Type:</label><input type="text" name="type" required maxlength="20">
                         <button class="submit" type="submit">Submit</button>
                     </form>
                 </div>
@@ -152,9 +152,9 @@
                 </div>
                 <div class="cars-content cars-content-add">
                     <form class="form-add" method="POST" action="/storeJag">
-                        <label for="name"> Model Name:</label><input type="text" name="model" required maxlength="10">
+                        <label for="name"> Model Name:</label><input type="text" name="model" required maxlength="20">
                         <label for="year"> Year Introduced:</label><input type="text" name="year" required>
-                        <label for="type"> Type:</label><input type="text" name="type" required maxlength="10">
+                        <label for="type"> Type:</label><input type="text" name="type" required maxlength="20">
                         <button class="submit" type="submit">Submit</button>
                     </form>
                 </div>
@@ -185,9 +185,9 @@
                 </div>
                 <div class="cars-content cars-content-add">
                     <form class="form-add" method="POST" action="/storeFord">
-                        <label for="name"> Model Name:</label><input type="text" name="model" required maxlength="10">
+                        <label for="name"> Model Name:</label><input type="text" name="model" required maxlength="20">
                         <label for="year"> Year Introduced:</label><input type="text" name="year" required>
-                        <label for="type"> Type:</label><input type="text" name="type" required maxlength="10">
+                        <label for="type"> Type:</label><input type="text" name="type" required maxlength="20">
                         <button class="submit" type="submit">Submit</button>
                     </form>
                 </div>
@@ -218,9 +218,9 @@
                 </div>
                 <div class="cars-content cars-content-add">
                     <form class="form-add" method="POST" action="/storeMazda">
-                        <label for="name"> Model Name:</label><input type="text" name="model" required maxlength="10">
+                        <label for="name"> Model Name:</label><input type="text" name="model" required maxlength="20">
                         <label for="year"> Year Introduced:</label><input type="text" name="year" required>
-                        <label for="type"> Type:</label><input type="text" name="type" required maxlength="10">
+                        <label for="type"> Type:</label><input type="text" name="type" required maxlength="20">
                         <button class="submit" type="submit">Submit</button>
                     </form>
                 </div>

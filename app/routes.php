@@ -4,8 +4,11 @@ $router->get('', 'CarsController@index');
 $router->get('home', 'CarsController@index');
 
 //audi
-$router->post('storeAudi', 'CarsController@storeAudi');
+// NEED TO REFACTOR ALL storeBrand, deleteAllBrand, deleteBrand, editBrand INTO JUST 4 FUNCTIONS WITH BRAND BEING PARAMATER BUT DON'T KNOW HOW
+// $router->post('storeAudi', "CarsController@store('audi')");
+$router->post('storeAudi', "CarsController@storeAudi");
 $router->post('deleteAllAudi', 'CarsController@deleteAllAudi');
+$router->post('delete', 'CarsController@delete');
 $router->get('editAudi', 'PagesController@editAudi');
 
 //bmw

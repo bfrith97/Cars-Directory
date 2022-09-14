@@ -38,6 +38,24 @@ class QueryBuilder
         }
     }
 
+    public function delete($table, $id, $parameters = [])
+    {
+        $sql = sprintf(
+            'delete from %s where id=',
+            $table,
+        ) . $id;
+        var_dump($sql);
+
+        try {
+
+            $statement = $this->pdo->prepare($sql);
+
+            $statement->execute($parameters);
+        } catch (Exception $e) {
+            die($e->getMessage());
+        }
+    }
+
     public function deleteAll($table, $parameters = [])
     {
         $sql = sprintf(

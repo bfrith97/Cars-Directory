@@ -24,6 +24,18 @@ class CarsController
         ]);
     }
 
+    public function store($brand)
+    {
+        die(1 + 1);
+        App::get('database')->insert($brand, [
+            'model' => $_POST['model'],
+            'year' => $_POST['year'],
+            'type' => $_POST['type']
+        ]);
+
+        return redirect('home');
+    }
+    //COULD REFACTOR AND HAVE SINGLE STORE() FUNCTION BUT DON'T KNOW HOW TO CALL FUNCTION WITH PARAMATERS IN ROUTES.PHP
     //audi
     public function storeAudi()
     {
@@ -41,6 +53,15 @@ class CarsController
         App::get('database')->deleteAll('audi');
 
         return redirect('home');
+    }
+
+    public function delete()
+    {
+        print_r($_POST);
+        die;
+        App::get('database')->delete('audi',);
+
+        return redirect('editAudi');
     }
 
     //bmw
