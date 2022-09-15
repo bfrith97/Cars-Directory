@@ -38,6 +38,7 @@
                     </ul>
                     <ul class="edit-btns">
                         <form action="edit" method="POST">
+                            <input type="hidden" name="id" value=<?= $car->id ?> />
                             <input type="hidden" name="brand" value=<?= $car->brand ?> />
                             <input type="hidden" name="model" value=<?= $car->model ?> />
                             <input type="hidden" name="year" value=<?= $car->year ?> />

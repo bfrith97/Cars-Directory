@@ -39,7 +39,6 @@ class CarsController
 
     public function edit()
     {
-
         return view('edit', [
             'brand' => $_POST['brand'],
             'id' => $_POST['id'],
@@ -47,6 +46,19 @@ class CarsController
             'year' => $_POST['year'],
             'type' => $_POST['type']
         ]);
+    }
+
+    public function update()
+    {
+        $brand = $_POST['brand'];
+        $id = $_POST['id'];
+        $model = $_POST['model'];
+        $year = $_POST['year'];
+        $type = $_POST['type'];
+
+        App::get('database')->update($brand, $model, $year, $type, $id);
+
+        return redirect('home');
     }
 
     public function delete()

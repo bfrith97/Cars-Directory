@@ -299,3 +299,9 @@ ul {
     height: 23px;
     margin: 0 50px 5px
 }
+.cars-edit-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}

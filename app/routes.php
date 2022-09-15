@@ -8,5 +8,6 @@ $router->post('store', "CarsController@store");
 $router->post('deleteAll', 'CarsController@deleteAll');
 $router->post('delete', 'CarsController@delete');
 $router->post('edit', 'CarsController@edit');
+$router->post('update', 'CarsController@update');
 
 $router->post('editList', 'PagesController@editList');

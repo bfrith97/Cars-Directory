@@ -38,8 +38,17 @@ class QueryBuilder
         }
     }
 
-    public function update($table, $id, $paramaters = [])
+    public function update($brand, $model, $year, $type, $id, $parameters = [])
     {
+        $sql = "UPDATE {$brand} SET model = '{$model}', year = {$year}, type = '{$type}' WHERE id = {$id}";
+        try {
+
+            $statement = $this->pdo->prepare($sql);
+
+            $statement->execute($parameters);
+        } catch (Exception $e) {
+            die($e->getMessage());
+        }
     }
 
     public function delete($table, $id, $parameters = [])
