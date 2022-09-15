@@ -109,6 +109,7 @@ body {
 }
 
 .cars-window {
+    overflow-y: scroll;
     margin: 0 auto;
     background-color: rgb(224, 224, 224);
     height: 700px;

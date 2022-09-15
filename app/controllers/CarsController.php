@@ -37,15 +37,31 @@ class CarsController
         return redirect('home');
     }
 
+    public function edit()
+    {
+
+        return view('edit', [
+            'brand' => $_POST['brand'],
+            'id' => $_POST['id'],
+            'model' => $_POST['model'],
+            'year' => $_POST['year'],
+            'type' => $_POST['type']
+        ]);
+    }
+
     public function delete()
     {
         $brand = $_POST['brand'];
+        $cars = App::get('database')->selectAll($brand);
         $id = $_POST['id'];
+
+        $view_string = "edit-{$brand}";
+        $view_string_corrected = str_replace(' ', '', $view_string);
         App::get('database')->delete($brand, $id);
 
-        $redir_str = "edit$brand";
-        $redir_location = str_replace(' ', '', $redir_str);
-        return redirect($redir_location);
+        return view('edit-list', [
+            'cars' => $cars,
+        ]);
     }
 
     public function deleteAll()

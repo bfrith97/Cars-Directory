@@ -37,7 +37,8 @@
                             <input type="hidden" name="brand" value="audi" />
                             <button class="list-btn delete-btn" name="delete" type="submit" onclick="return confirm('Are you sure you want to delete all?')">Delete All</button>
                         </form>
-                        <form class="edit-form" method="GET" action="/editaudi">
+                        <form class="edit-form" method="POST" action="/editList">
+                            <input type="hidden" name="brand" value="audi" />
                             <button class="list-btn edit-btn" type="submit">Edit</button>
                         </form>
                         <button class="list-btn sort-btn" type="button">\/ Sort \/</button>
@@ -72,7 +73,8 @@
                             <input type="hidden" name="brand" value="bmw" />
                             <button class="list-btn delete-btn" name="delete" type="submit" onclick="return confirm('Are you sure you want to delete all?')">Delete All</button>
                         </form>
-                        <form class="edit-form" method="GET" action="/editbmw">
+                        <form class="edit-form" method="POST" action="/editList">
+                            <input type="hidden" name="brand" value="bmw" />
                             <button class="list-btn edit-btn" type="submit">Edit</button>
                         </form>
                         <button class="list-btn sort-btn" type="button">\/ Sort \/</button>
@@ -107,7 +109,8 @@
                             <input type="hidden" name="brand" value="mercedes" />
                             <button class="list-btn delete-btn" name="delete" type="submit" onclick="return confirm('Are you sure you want to delete all?')">Delete All</button>
                         </form>
-                        <form class="edit-form" method="GET" action="/editmerc">
+                        <form class="edit-form" method="POST" action="/editList">
+                            <input type="hidden" name="brand" value="mercedes" />
                             <button class="list-btn edit-btn" type="submit">Edit</button>
                         </form>
                         <button class="list-btn sort-btn" type="button">\/ Sort \/</button>
@@ -138,11 +141,12 @@
             <div class="cars-window-inner">
                 <div class="cars-content cars-content-list">
                     <div class="buttons">
-                        <form class="delete-form" method="POST" action="/delete">
+                        <form class="delete-form" method="POST" action="/deleteAll">
                             <input type="hidden" name="brand" value="jaguar" />
                             <button class="list-btn delete-btn" name="delete" type="submit" onclick="return confirm('Are you sure you want to delete all?')">Delete All</button>
                         </form>
-                        <form class="edit-form" method="GET" action="/editjag">
+                        <form class="edit-form" method="POST" action="/editList">
+                            <input type="hidden" name="brand" value="jaguar" />
                             <button class="list-btn edit-btn" type="submit">Edit</button>
                         </form>
                         <button class="list-btn sort-btn" type="button">\/ Sort \/</button>
@@ -177,7 +181,8 @@
                             <input type="hidden" name="brand" value="ford" />
                             <button class="list-btn delete-btn" name="delete" type="submit" onclick="return confirm('Are you sure you want to delete all?')">Delete All</button>
                         </form>
-                        <form class="edit-form" method="GET" action="/editford">
+                        <form class="edit-form" method="POST" action="/editList">
+                            <input type="hidden" name="brand" value="ford" />
                             <button class="list-btn edit-btn" type="submit">Edit</button>
                         </form>
                         <button class="list-btn sort-btn" type="button">\/ Sort \/</button>
@@ -212,7 +217,8 @@
                             <input type="hidden" name="brand" value="mazda" />
                             <button class="list-btn delete-btn" name="delete" type="submit" onclick="return confirm('Are you sure you want to delete all?')">Delete All</button>
                         </form>
-                        <form class="edit-form" method="GET" action="/editmazda">
+                        <form class="edit-form" method="POST" action="/editList">
+                            <input type="hidden" name="brand" value="mazda" />
                             <button class="list-btn edit-btn" type="submit">Edit</button>
                         </form>
                         <button class="list-btn sort-btn" type="button">\/ Sort \/</button>

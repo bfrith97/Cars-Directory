@@ -38,6 +38,10 @@ class QueryBuilder
         }
     }
 
+    public function update($table, $id, $paramaters = [])
+    {
+    }
+
     public function delete($table, $id, $parameters = [])
     {
         $sql = sprintf(
