@@ -32,7 +32,6 @@
             <div class="car-lists-edit">
                 <?php foreach ($audis as $audi) : ?>
                     <ul class="car-list-edit">
-                        !!NEED TO ADD ID AS HIDDEN INPUT TO BE SELECTABLE ON POST REQUEST!!
                         <li class="content-name"><b>Model </b> - <?= $audi->model ?></li>
                         <li class="content-name"><b>Year Introduced</b> - <?= $audi->year ?></li>
                         <li class="content-name"><b> Type </b> - <?= $audi->type ?></li>
@@ -42,6 +41,8 @@
                             <button class="edit-btn-link" type='submit'>EDIT</button>
                         </form>
                         <form class="delete-form" method="POST" action="/delete">
+                            <input type="hidden" name="brand" value=" <?= $audi->brand ?> " />
+                            <input type="hidden" name="id" value=" <?= $audi->id ?> " />
                             <button class="edit-btn-link" name="delete" type="submit" onclick="return confirm('Are you sure you want to delete this?')">Delete</button>
                         </form>
                     </ul>

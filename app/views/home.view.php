@@ -33,10 +33,11 @@
             <div class="cars-window-inner">
                 <div class="cars-content cars-content-list">
                     <div class="buttons">
-                        <form class="delete-form" method="POST" action="/deleteAllAudi">
+                        <form class="delete-form" method="POST" action="/deleteAll">
+                            <input type="hidden" name="brand" value="audi" />
                             <button class="list-btn delete-btn" name="delete" type="submit" onclick="return confirm('Are you sure you want to delete all?')">Delete All</button>
                         </form>
-                        <form class="edit-form" method="GET" action="/editAudi">
+                        <form class="edit-form" method="GET" action="/editaudi">
                             <button class="list-btn edit-btn" type="submit">Edit</button>
                         </form>
                         <button class="list-btn sort-btn" type="button">\/ Sort \/</button>
@@ -52,7 +53,8 @@
                     </div>
                 </div>
                 <div class="cars-content cars-content-add">
-                    <form class="form-add" method="POST" action="/storeAudi">
+                    <form class="form-add" method="POST" action="/store">
+                        <input type="hidden" name="brand" value="audi" />
                         <label for="model"> Model Name:</label><input type="text" name="model" required maxlength="20">
                         <label for="year"> Year Introduced:</label><input type="number" name="year" required>
                         <label for="type"> Type: </label><input type="text" name="type" required maxlength="20">
@@ -66,10 +68,11 @@
             <div class="cars-window-inner">
                 <div class="cars-content cars-content-list">
                     <div class="buttons">
-                        <form class="delete-form" method="POST" action="/deleteAllBMW">
+                        <form class="delete-form" method="POST" action="/deleteAll">
+                            <input type="hidden" name="brand" value="bmw" />
                             <button class="list-btn delete-btn" name="delete" type="submit" onclick="return confirm('Are you sure you want to delete all?')">Delete All</button>
                         </form>
-                        <form class="edit-form" method="GET" action="/editBMW">
+                        <form class="edit-form" method="GET" action="/editbmw">
                             <button class="list-btn edit-btn" type="submit">Edit</button>
                         </form>
                         <button class="list-btn sort-btn" type="button">\/ Sort \/</button>
@@ -85,7 +88,8 @@
                     </div>
                 </div>
                 <div class="cars-content cars-content-add">
-                    <form class="form-add" method="POST" action="/storeBMW">
+                    <form class="form-add" method="POST" action="/store">
+                        <input type="hidden" name="brand" value="bmw" />
                         <label for="name"> Model Name:</label><input type="text" name="model" required maxlength="20">
                         <label for="year"> Year Introduced:</label><input type="text" name="year" required>
                         <label for="type"> Type:</label><input type="text" name="type" required maxlength="20">
@@ -99,10 +103,11 @@
             <div class="cars-window-inner">
                 <div class="cars-content cars-content-list">
                     <div class="buttons">
-                        <form class="delete-form" method="POST" action="/deleteAllMerc">
+                        <form class="delete-form" method="POST" action="/deleteAll">
+                            <input type="hidden" name="brand" value="mercedes" />
                             <button class="list-btn delete-btn" name="delete" type="submit" onclick="return confirm('Are you sure you want to delete all?')">Delete All</button>
                         </form>
-                        <form class="edit-form" method="GET" action="/editMerc">
+                        <form class="edit-form" method="GET" action="/editmerc">
                             <button class="list-btn edit-btn" type="submit">Edit</button>
                         </form>
                         <button class="list-btn sort-btn" type="button">\/ Sort \/</button>
@@ -118,7 +123,8 @@
                     </div>
                 </div>
                 <div class="cars-content cars-content-add">
-                    <form class="form-add" method="POST" action="/storeMerc">
+                    <form class="form-add" method="POST" action="/store">
+                        <input type="hidden" name="brand" value="mercedes" />
                         <label for="name"> Model Name:</label><input type="text" name="model" required maxlength="20">
                         <label for="year"> Year Introduced:</label><input type="text" name="year" required>
                         <label for="type"> Type:</label><input type="text" name="type" required maxlength="20">
@@ -132,10 +138,11 @@
             <div class="cars-window-inner">
                 <div class="cars-content cars-content-list">
                     <div class="buttons">
-                        <form class="delete-form" method="POST" action="/deleteAllJag">
+                        <form class="delete-form" method="POST" action="/delete">
+                            <input type="hidden" name="brand" value="jaguar" />
                             <button class="list-btn delete-btn" name="delete" type="submit" onclick="return confirm('Are you sure you want to delete all?')">Delete All</button>
                         </form>
-                        <form class="edit-form" method="GET" action="/editJag">
+                        <form class="edit-form" method="GET" action="/editjag">
                             <button class="list-btn edit-btn" type="submit">Edit</button>
                         </form>
                         <button class="list-btn sort-btn" type="button">\/ Sort \/</button>
@@ -151,7 +158,8 @@
                     </div>
                 </div>
                 <div class="cars-content cars-content-add">
-                    <form class="form-add" method="POST" action="/storeJag">
+                    <form class="form-add" method="POST" action="/store">
+                        <input type="hidden" name="brand" value="jaguar" />
                         <label for="name"> Model Name:</label><input type="text" name="model" required maxlength="20">
                         <label for="year"> Year Introduced:</label><input type="text" name="year" required>
                         <label for="type"> Type:</label><input type="text" name="type" required maxlength="20">
@@ -165,10 +173,11 @@
             <div class="cars-window-inner">
                 <div class="cars-content cars-content-list">
                     <div class="buttons">
-                        <form class="delete-form" method="POST" action="/deleteAllFord">
+                        <form class="delete-form" method="POST" action="/deleteAll">
+                            <input type="hidden" name="brand" value="ford" />
                             <button class="list-btn delete-btn" name="delete" type="submit" onclick="return confirm('Are you sure you want to delete all?')">Delete All</button>
                         </form>
-                        <form class="edit-form" method="GET" action="/editFord">
+                        <form class="edit-form" method="GET" action="/editford">
                             <button class="list-btn edit-btn" type="submit">Edit</button>
                         </form>
                         <button class="list-btn sort-btn" type="button">\/ Sort \/</button>
@@ -184,7 +193,8 @@
                     </div>
                 </div>
                 <div class="cars-content cars-content-add">
-                    <form class="form-add" method="POST" action="/storeFord">
+                    <form class="form-add" method="POST" action="/store">
+                        <input type="hidden" name="brand" value="ford" />
                         <label for="name"> Model Name:</label><input type="text" name="model" required maxlength="20">
                         <label for="year"> Year Introduced:</label><input type="text" name="year" required>
                         <label for="type"> Type:</label><input type="text" name="type" required maxlength="20">
@@ -198,10 +208,11 @@
             <div class="cars-window-inner">
                 <div class="cars-content cars-content-list">
                     <div class="buttons">
-                        <form class="delete-form" method="POST" action="/deleteAllMazda">
+                        <form class="delete-form" method="POST" action="/deleteAll">
+                            <input type="hidden" name="brand" value="mazda" />
                             <button class="list-btn delete-btn" name="delete" type="submit" onclick="return confirm('Are you sure you want to delete all?')">Delete All</button>
                         </form>
-                        <form class="edit-form" method="GET" action="/editMazda">
+                        <form class="edit-form" method="GET" action="/editmazda">
                             <button class="list-btn edit-btn" type="submit">Edit</button>
                         </form>
                         <button class="list-btn sort-btn" type="button">\/ Sort \/</button>
@@ -217,7 +228,8 @@
                     </div>
                 </div>
                 <div class="cars-content cars-content-add">
-                    <form class="form-add" method="POST" action="/storeMazda">
+                    <form class="form-add" method="POST" action="/store">
+                        <input type="hidden" name="brand" value="mazda" />
                         <label for="name"> Model Name:</label><input type="text" name="model" required maxlength="20">
                         <label for="year"> Year Introduced:</label><input type="text" name="year" required>
                         <label for="type"> Type:</label><input type="text" name="type" required maxlength="20">

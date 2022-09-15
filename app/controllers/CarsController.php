@@ -24,137 +24,34 @@ class CarsController
         ]);
     }
 
-    public function store($brand)
+    public function store()
     {
-        die(1 + 1);
+        $brand = $_POST['brand'];
         App::get('database')->insert($brand, [
+            'brand' => $_POST['brand'],
             'model' => $_POST['model'],
             'year' => $_POST['year'],
             'type' => $_POST['type']
         ]);
-
-        return redirect('home');
-    }
-    //COULD REFACTOR AND HAVE SINGLE STORE() FUNCTION BUT DON'T KNOW HOW TO CALL FUNCTION WITH PARAMATERS IN ROUTES.PHP
-    //audi
-    public function storeAudi()
-    {
-        App::get('database')->insert('audi', [
-            'model' => $_POST['model'],
-            'year' => $_POST['year'],
-            'type' => $_POST['type']
-        ]);
-
-        return redirect('home');
-    }
-
-    public function deleteAllAudi()
-    {
-        App::get('database')->deleteAll('audi');
 
         return redirect('home');
     }
 
     public function delete()
     {
-        print_r($_POST);
-        die;
-        App::get('database')->delete('audi',);
+        $brand = $_POST['brand'];
+        $id = $_POST['id'];
+        App::get('database')->delete($brand, $id);
 
-        return redirect('editAudi');
+        $redir_str = "edit$brand";
+        $redir_location = str_replace(' ', '', $redir_str);
+        return redirect($redir_location);
     }
 
-    //bmw
-    public function storeBMW()
+    public function deleteAll()
     {
-        App::get('database')->insert('bmw', [
-            'model' => $_POST['model'],
-            'year' => $_POST['year'],
-            'type' => $_POST['type']
-        ]);
-
-        return redirect('home');
-    }
-
-    public function deleteAllBMW()
-    {
-        App::get('database')->deleteAll('bmw');
-
-        return redirect('home');
-    }
-
-    //merc
-    public function storeMerc()
-    {
-        App::get('database')->insert('mercedes', [
-            'model' => $_POST['model'],
-            'year' => $_POST['year'],
-            'type' => $_POST['type']
-        ]);
-
-        return redirect('home');
-    }
-
-    public function deleteAllMerc()
-    {
-        App::get('database')->deleteAll('merc');
-
-        return redirect('home');
-    }
-
-    //jag
-    public function storeJag()
-    {
-        App::get('database')->insert('jaguar', [
-            'model' => $_POST['model'],
-            'year' => $_POST['year'],
-            'type' => $_POST['type']
-        ]);
-
-        return redirect('home');
-    }
-
-    public function deleteAllJag()
-    {
-        App::get('database')->deleteAll('jaguar');
-
-        return redirect('home');
-    }
-
-    //ford
-    public function storeFord()
-    {
-        App::get('database')->insert('ford', [
-            'model' => $_POST['model'],
-            'year' => $_POST['year'],
-            'type' => $_POST['type']
-        ]);
-
-        return redirect('home');
-    }
-
-    public function deleteAllFord()
-    {
-        App::get('database')->deleteAll('ford');
-
-        return redirect('home');
-    }
-
-    //mazda
-    public function storeMazda()
-    {
-        App::get('database')->insert('mazda', [
-            'model' => $_POST['model'],
-            'year' => $_POST['year'],
-            'type' => $_POST['type']
-        ]);
-
-        return redirect('home');
-    }
-
-    public function deleteAllMazda()
-    {
-        App::get('database')->deleteAll('mazda');
+        $brand = $_POST['brand'];
+        App::get('database')->deleteAll($brand);
 
         return redirect('home');
     }

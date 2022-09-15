@@ -38,7 +38,11 @@
                     </ul>
                     <ul class="edit-btns">
                         <button class="edit-btn-link">EDIT</button>
-                        <button class="edit-btn-link">DELETE</button>
+                        <form class="delete-form" method="POST" action="/delete">
+                            <input type="hidden" name="brand" value=" <?= $ford->brand ?> " />
+                            <input type="hidden" name="id" value=" <?= $ford->id ?> " />
+                            <button class="edit-btn-link" name="delete" type="submit" onclick="return confirm('Are you sure you want to delete this?')">Delete</button>
+                        </form>
                     </ul>
                 <?php endforeach ?>
             </div>

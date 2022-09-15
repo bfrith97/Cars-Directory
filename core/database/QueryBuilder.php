@@ -44,7 +44,7 @@ class QueryBuilder
             'delete from %s where id=',
             $table,
         ) . $id;
-        var_dump($sql);
+        // var_dump($sql);
 
         try {
 
