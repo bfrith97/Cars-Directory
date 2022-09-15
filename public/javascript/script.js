@@ -90,14 +90,3 @@ reverseSortBtns.forEach((btn) => {
        
     })
 })
-
-
-// reverseSortBtn.addEventListener('click', () => {
-//     if (carLists.style.flexDirection === 'column') {
-//         carLists.style.flexDirection = "column-reverse";
-//         console.log('1')
-//     } else {
-//         carLists.style.flexDirection = 'column';
-//         console.log('2')
-//     }
-// })

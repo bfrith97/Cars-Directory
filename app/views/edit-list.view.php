@@ -48,7 +48,7 @@
                         <form class="delete-form" method="POST" action="/delete">
                             <input type="hidden" name="brand" value=" <?= $car->brand ?> " />
                             <input type="hidden" name="id" value=" <?= $car->id ?> " />
-                            <button class="edit-btn-link" name="delete" type="submit" onclick="return confirm('Are you sure you want to delete this?')">DELETE</button>
+                            <button class="edit-btn-link" name="delete" type="submit" onclick="return confirm('Are you sure you want to delete this? REFRESH TO SEE RESULT')">DELETE</button>
                         </form>
                     </ul>
                 <?php endforeach ?>
