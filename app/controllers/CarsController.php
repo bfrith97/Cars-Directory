@@ -8,6 +8,7 @@ class CarsController
 {
     public function index()
     {
+
         $bmws = App::get('database')->selectAll('bmw');
         $audis = App::get('database')->selectAll('audi');
         $mercs = App::get('database')->selectAll('mercedes');

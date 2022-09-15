@@ -6,11 +6,6 @@ use App\Core\App;
 
 class PagesController
 {
-    public function landing()
-    {
-        return view('landing');
-    }
-
     public function editList()
     {
         $brand = $_POST['brand'];
@@ -18,5 +13,15 @@ class PagesController
         return view("edit-list", [
             'cars' => $cars,
         ]);
+    }
+
+    public function chooseTheme()
+    {
+        if (isset($_GET['choice'])) {
+            $choice = $_GET['choice'];
+            setcookie("sitestyle", $choice, time() + 60 + 60 + 24 + 100, "/");
+
+            return redirect("home");
+        }
     }
 }

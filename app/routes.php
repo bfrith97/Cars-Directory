@@ -2,6 +2,7 @@
 
 $router->get('', 'CarsController@index');
 $router->get('home', 'CarsController@index');
+$router->get('chooseTheme', 'PagesController@chooseTheme');
 
 
 $router->post('store', "CarsController@store");

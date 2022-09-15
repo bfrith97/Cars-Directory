@@ -34,15 +34,6 @@ const jagNavSelector = document.querySelector('.brand-selector-jaguar');
 const fordNavSelector = document.querySelector('.brand-selector-ford');
 const mazdaNavSelector = document.querySelector('.brand-selector-mazda');
 
-// Window Selectors
-const audiWindowSelector = document.querySelector('.cars-window-audi');
-const bmwWindowSelector = document.querySelector('.cars-window-bmw');
-const mercedesWindowSelector = document.querySelector('.cars-window-mercedes');
-const jagWindowSelector = document.querySelector('.cars-window-jaguar');
-const fordWindowSelector = document.querySelector('.cars-window-ford');
-const mazdaWindowSelector = document.querySelector('.cars-window-mazda');
-
-
 import { audiActive, bmwActive, fordActive, jagActive, mazdaActive, mercActive } from "./functions/navSelectors.js";
 
 audiNavSelector.addEventListener('click', () => {
