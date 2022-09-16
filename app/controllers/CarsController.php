@@ -4,6 +4,24 @@ namespace App\Controllers;
 
 use App\Core\App;
 
+function validateInput($data)
+{
+    $data = trim($data);
+    $data = stripslashes($data);
+    $data = htmlspecialchars($data);
+    // print_r($data);
+    return $data;
+}
+
+function validateBrand($data)
+{
+    if (!$data === 'bmw' ||  !$data === 'audi' ||  !$data === 'mercedes' ||  !$data === 'jaguar' ||  !$data === 'ford' ||  !$data === 'mazda') {
+        print_r('error');
+    } else {
+        return $data;
+    }
+}
+
 class CarsController
 {
     public function index()
@@ -27,12 +45,13 @@ class CarsController
 
     public function store()
     {
-        $brand = $_POST['brand'];
+
+        $brand = validateBrand($_POST['brand']);
         App::get('database')->insert($brand, [
-            'brand' => $_POST['brand'],
-            'model' => $_POST['model'],
-            'year' => $_POST['year'],
-            'type' => $_POST['type']
+            'brand' => validateBrand($_POST['brand']),
+            'model' => validateInput($_POST['model']),
+            'year' => validateInput($_POST['year']),
+            'type' => validateInput($_POST['type'])
         ]);
 
         return redirect('home');
@@ -41,8 +60,8 @@ class CarsController
     public function edit()
     {
         return view('edit', [
-            'brand' => $_POST['brand'],
-            'id' => $_POST['id'],
+            'brand' => validateInput($_POST['brand']),
+            'id' => validateInput($_POST['id']),
             'model' => $_POST['model'],
             'year' => $_POST['year'],
             'type' => $_POST['type']
