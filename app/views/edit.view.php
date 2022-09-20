@@ -19,12 +19,12 @@
                     <label for="model"> Model Name:</label><input type="text" name="model" required maxlength="20" value="<?= $model ?>" />
                     <label for="year"> Year Introduced:</label><input type="number" name="year" required value="<?= $year ?>">
                     <label for="type"> Type: </label><input type="text" name="type" required maxlength="20" value="<?= $type ?>">
-                    <button class="submit" type="submit">Submit</button>
+                    <!-- <label for="img"> Image: </label><input type="file" name="file" id="file" required value="<?= $img_dur ?>"> -->
+                    <button class=" submit" type="submit">Submit</button>
                 </form>
             </div>
         </div>
     </div>
-    <script type="module" src="/public/javascript/editPage.js"></script>
     </body>
 
     </html>

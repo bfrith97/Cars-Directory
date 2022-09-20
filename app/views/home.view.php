@@ -31,9 +31,14 @@
                         <div class="car-lists">
                             <?php foreach ($audis as $audi) : ?>
                                 <ul class="car-list">
-                                    <li class="content-name"><b>Model </b> - <?= $audi->model ?></li>
-                                    <li class="content-name"><b>Year Introduced</b> - <?= $audi->year ?></li>
-                                    <li class="content-name"><b> Type </b> - <?= $audi->type ?></li>
+                                    <div class="car-list-left">
+                                        <li class="content-name"><b>Model </b> - <?= $audi->model ?></li>
+                                        <li class="content-name"><b>Year Introduced</b> - <?= $audi->year ?></li>
+                                        <li class="content-name"><b> Type </b> - <?= $audi->type ?></li>
+                                    </div>
+                                    <div class="car-list-right">
+                                        <li class="content-name"><img class="car_img" src="<?= $audi->imgdir ?>" /> </li>
+                                    </div>
                                 </ul>
                             <?php endforeach ?>
                         </div>
@@ -44,6 +49,7 @@
                             <label for="model"> Model Name:</label><input type="text" name="model" required maxlength="20">
                             <label for="year"> Year Introduced:</label><input type="number" name="year" required>
                             <label for="type"> Type: </label><input type="text" name="type" required maxlength="20">
+                            <label for="img"> Image: </label><input type="file" name="file" id="file" required>
                             <button class="submit" type="submit">Submit</button>
                         </form>
                     </div>

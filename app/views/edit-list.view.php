@@ -24,6 +24,7 @@
                         <input type="hidden" name="model" value=<?= $car->model ?> />
                         <input type="hidden" name="year" value=<?= $car->year ?> />
                         <input type="hidden" name="type" value=<?= $car->type ?> />
+                        <input type="hidden" name="img_dir" value=<?= $car->imgdir ?> />
                         <button class="edit-btn-link" type='submit'>EDIT</button>
                     </form>
                     <form class="delete-form" method="POST" action="/delete">
@@ -35,7 +36,6 @@
             <?php endforeach ?>
         </div>
     </div>
-    <script type="module" src="/public/javascript/editPage.js"></script>
     </body>
 
     </html>
