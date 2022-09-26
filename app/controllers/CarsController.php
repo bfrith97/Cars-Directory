@@ -49,38 +49,41 @@ class CarsController
     {
 
         $brand = ($_POST['brand']);
-        $model = ($_POST['model']);
 
-        $target_dir = "public/imgs/" . $brand . "/";
-        $target_file = $target_dir . basename($_FILES["file"]["name"]);
+        //For when implementing images functionality gets fixed
 
-        $imageFileType = strtolower(pathinfo($target_file, PATHINFO_EXTENSION));
-        // print_r($imageFileType);
-        // die;
+        // $model = ($_POST['model']);
 
-        if (file_exists($target_file)) {
-            echo "Sorry, file already exists.";
-            return;
-        }
+        // $target_dir = "public/imgs/";
+        // $target_file = $target_dir . basename($_FILES["file"]["name"]);
 
-        if ($_FILES["file"]["size"] > 500000) {
-            echo "Sorry, your file is too large";
-            return;
-        }
+        // $imageFileType = strtolower(pathinfo($target_file, PATHINFO_EXTENSION));
+        // // print_r($_FILES);
+        // // die;
 
-        if (
-            $imageFileType != "jpg" && $imageFileType != "png" && $imageFileType != "jpeg"
-            && $imageFileType != "gif"
-        ) {
-            echo "Sorry, only JPG, JPEG, PNG & GIF files are allowed.";
-            return;
-        }
+        // if (file_exists($target_file)) {
+        //     echo "Sorry, file already exists.";
+        //     return;
+        // }
 
-        if (move_uploaded_file($_FILES["file"]["tmp_name"], $target_file)) {
-            redirect('home');
-        } else {
-            echo "Sorry, there was an error uploading your file.";
-        }
+        // if ($_FILES["file"]["size"] > 500000) {
+        //     echo "Sorry, your file is too large";
+        //     return;
+        // }
+
+        // if (
+        //     $imageFileType != "jpg" && $imageFileType != "png" && $imageFileType != "jpeg"
+        //     && $imageFileType != "gif"
+        // ) {
+        //     echo "Sorry, only JPG, JPEG, PNG & GIF files are allowed.";
+        //     return;
+        // }
+
+        // if (move_uploaded_file($_FILES["file"]["tmp_name"], $target_file)) {
+        //     redirect('home');
+        // } else {
+        //     echo "Sorry, there was an error uploading your file.";
+        // }
 
 
         App::get('database')->insert($brand, [
@@ -88,7 +91,7 @@ class CarsController
             'model' => validateInput($_POST['model']),
             'year' => validateInput($_POST['year']),
             'type' => validateInput($_POST['type']),
-            'imgdir' => $target_file
+            // 'imgdir' => $target_file
         ]);
 
         return redirect('home');

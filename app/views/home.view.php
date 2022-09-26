@@ -45,11 +45,11 @@
                     </div>
                     <div class="cars-content cars-content-add">
                         <form class="form-add" method="POST" action="/store">
-                            <input type="hidden" name="brand" value="audi" />
+                            <input type="hidden" name="brand" value="audi" enctype="multipart/form-data" />
                             <label for="model"> Model Name:</label><input type="text" name="model" required maxlength="20">
                             <label for="year"> Year Introduced:</label><input type="number" name="year" required>
                             <label for="type"> Type: </label><input type="text" name="type" required maxlength="20">
-                            <label for="img"> Image: </label><input type="file" name="file" id="file" required>
+                            <!-- <label for="file"> Image: </label><input type="file" name="file" id="file" required> -->
                             <button class="submit" type="submit">Submit</button>
                         </form>
                     </div>
